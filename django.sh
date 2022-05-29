@@ -28,19 +28,19 @@ phase3(){
         python manage.py runserver
     elif [[ $choice -eq 2 ]]; then
         #statements
-        python manage.py createsuperuser
+        python3 manage.py createsuperuser
     elif [[ $choice -eq 3 ]]; then
         #statements
-        python manage.py changepassword
+        python3 manage.py changepassword
     elif [[ $choice -eq 4 ]]; then
         #statements
-        python manage.py migrate
+        python3 manage.py migrate
     elif [[ $choice -eq 5 ]]; then
         #statements
-        python manage.py makemigrations
+        python3 manage.py makemigrations
     elif [[ $choice -eq 6 ]]; then
         #statements
-        python manage.py startapp
+        python3 manage.py startapp
     else
         echo -e "$Alert Input Error $enc"
         echo ""
