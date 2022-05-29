@@ -25,4 +25,4 @@ Make Sure that you have Installed those Packeges and Libraries ;
 ### Screenshot
 <br>
 <p align="center">
-<img width="98%" src="https://github.com/harsh7839/django-shortcut/blob/main/django-shortcut.jpg"\>
+<img width="100%" src="https://github.com/harsh7839/django-shortcut/blob/main/django-shortcut.jpg"\>
