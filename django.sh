@@ -96,7 +96,7 @@ config_file(){
 }
 
 echo ""
-echo -e "$General Django Shortcut Tool [ version: 1.0 ] $enc"
+echo -e "$General Django Shortcut Tool [ version: 1.1 ] $enc"
 
 # directory management
 if [[ -f "config.ac" ]]; then
