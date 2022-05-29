@@ -1,1 +1,1 @@
-# django-shortcut
+# Hello world
