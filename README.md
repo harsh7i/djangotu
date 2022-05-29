@@ -21,3 +21,8 @@ Make Sure that you have Installed those Packeges and Libraries ;
 * `apt install python curl -y` or `sudo apt install python3 python3-pip curl -y`
 * `pip install django-admin`
 * `pip install django`
+
+### Screenshot
+<br>
+<p align="center">
+<img width="98%" src="https://github.com/harsh7839/django-shortcut/blob/main/django-shortcut.jpg"\>
