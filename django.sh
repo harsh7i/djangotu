@@ -82,7 +82,7 @@ config_file(){
     echo ""
     echo -e "$General Enter the Parant Directory of your django Project.$enc"
     echo ""
-    read -p ">> " directory
+    read -e -p ">> " directory
     echo ""
     if [[ -d "$directory" ]]; then
         #statements
