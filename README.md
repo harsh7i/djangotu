@@ -11,17 +11,21 @@ curl -OL https://raw.githubusercontent.com/harsh7i/django-shortcut/main/django.s
 
 ### Note
 Make Sure that you have Installed those Packeges and Libraries ;
-* Please make sure that you have Storage Permission On your Terminal.
-* Python
-* Curl
-* django
-* django-admin
+* `Please make sure that you have Storage Permission On your Terminal.`
+* `Python`
+* `Curl`
+* `django`
+* `django-admin`
 
 ! If installed then you can enjoy this. Else you have to install all this with those Commands.
-* `apt update` or `sudo apt update`
-* `apt install python curl -y` or `sudo apt install python3 python3-pip curl -y`
-* `pip install django-admin`
-* `pip install django`
+* `Termux`
+```shell
+termux-setup-storage && apt-get -y update && apt-get -y upgrade && apt install python3 curl -y && pip install django && pip install django-admin
+```
+* `Linux`
+```shell
+sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt install python3 python3-pip curl -y && sudo pip install django && sudo pip install django-admin
+```
 
 ### Screenshot
 <br>
