@@ -10,6 +10,7 @@ curl -OL https://raw.githubusercontent.com/harsh7i/django-shortcut/main/django.s
 ```
 
 ### Note
+* Please make sure that you have Storage Permission On your Terminal.
 Make Sure that you have Installed those Packeges and Libraries ;
 * Python
 * Curl
