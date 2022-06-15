@@ -1,24 +1,29 @@
 #!/bin/bash
 
-#variables
+# Variables
+Red="\e[0;31m"
+Green="\e[0;32m"
+Blue="\e[0;34m"
 Alert="\e[0;31m[×]"
-General="\e[0;32m[+]"
+Success="\e[0;32m[+]"
+dim="\e[0;2m"
 enc="\e[0;m"
-# directory=django folder
+
+# directory=django directory
 
 phase3(){
-    echo -e "$General General Functions List...$enc"
+    echo -e "$Success Success Functions List...$enc"
     echo ""
     
-    echo "1.runserver"
-    echo "2.createsuperuser"
-    echo "3.changepassword"
-    echo "4.migrate"
-    echo "5.makemigrations"
-    echo "6.startapp"
+    echo -e "$Blue 1.runserver"
+    echo -e "$Blue 2.createsuperuser"
+    echo -e "$Blue 3.changepassword"
+    echo -e "$Blue 4.migrate"
+    echo -e "$Blue 5.makemigrations"
+    echo -e "$Blue 6.startapp"
     
     echo ""
-    echo -e "$General Choose a function $enc"
+    echo -e "$Success Choose a function $enc"
     echo ""
     read -p ">> " choice
     echo ""
@@ -40,7 +45,10 @@ phase3(){
         python3 manage.py makemigrations
     elif [[ $choice -eq 6 ]]; then
         #statements
-        python3 manage.py startapp
+        read -e -p ">> " appname
+        echo ""
+        django-admin startapp $appname &> /dev/null && echo -e "$Success Successfully App Created $enc"
+        echo ""
     else
         echo -e "$Alert Input Error $enc"
         echo ""
@@ -50,7 +58,7 @@ phase3(){
 
 phase2(){
     echo ""
-    echo -e "$General Select Your Project $enc"
+    echo -e "$Success Select Your Project $enc"
     echo ""
     
     # loops
@@ -62,7 +70,7 @@ phase2(){
     let i=0
     for items in "${arrDir[@]}" ; do
         #statements
-        echo " $((i++)).$items"
+        echo -e "$Blue $((i++)).$items $enc"
     done
     
     echo ""
@@ -80,13 +88,13 @@ phase2(){
 
 config_file(){
     echo ""
-    echo -e "$General Enter the Parant Directory of your django Project.$enc"
+    echo -e "$Alert Enter the Parant Directory of your django Project.$enc"
     echo ""
     read -e -p ">> " directory
     echo ""
     if [[ -d "$directory" ]]; then
         #statements
-        echo "$directory" >> config.ac
+        echo "$directory" >> .config_django
         cd $directory
         phase2
     else
@@ -96,12 +104,12 @@ config_file(){
 }
 
 echo ""
-echo -e "$General Django Shortcut Tool [ version: 1.1 ] $enc"
+echo -e "$Success Django Shortcut Tool [ version: 1.1 ] $enc"
 
 # directory management
-if [[ -f "config.ac" ]]; then
+if [[ -f ".config_django" ]]; then
     #statements
-    directory=`cat config.ac`
+    directory=`cat .config_django`
     if [[ -d $directory ]]; then
         #statements
         cd $directory
