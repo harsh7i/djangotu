@@ -9,7 +9,7 @@ Run This !
 curl -OL https://raw.githubusercontent.com/harsh7i/DjangoTu/main/django.sh && chmod +x django.sh && bash django.sh
 ```
 
-### Note
+### Alert
 Make Sure that you have Installed those Packeges and Libraries ;
 * `Please make sure that you have Storage Permission On your Terminal.`
 * `Python`
