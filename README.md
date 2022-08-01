@@ -6,7 +6,7 @@ This Tool saves much more time to that developers.
 Run This !
 
 ``` bash
-curl -OL https://raw.githubusercontent.com/harsh7i/djangotu/main/django.sh && chmod +x django.sh && bash django.sh
+curl -OL https://raw.githubusercontent.com/harsh7i/DjangoTu/main/django.sh && chmod +x django.sh && bash django.sh
 ```
 
 ### Note
